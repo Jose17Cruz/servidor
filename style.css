@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at center, #0a0a0f, #000);
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  width: 380px;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #00f, #0ff, #f0f, #0f0) 1;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00f;
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-200px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: box-shadow 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #0ff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #00f, #0ff);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #f0f, #0f0);
+  box-shadow: 0 0 20px #0ff;
+}
+
+.toggle {
+  text-align: center;
+  margin-top: 15px;
+  color: #0ff;
+  cursor: pointer;
+}
+
+.fadeOut {
+  animation: fadeOut 0.8s forwards;
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; transform: translateY(-100px); }
+}
